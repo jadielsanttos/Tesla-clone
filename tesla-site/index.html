@@ -1,0 +1,62 @@
+<!--welcome-->
+<!--bem-vindo(a)-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favi-ico.png" type="image/x-icon">
+    <title>Eletric Cars, Solar & Clean Energy | Tesla</title>
+</head>
+<body>
+    <section class="main">
+        <header id="header">
+            <a href=""><img id="img-logo" src="imagens/logo-tela.png" alt=""></a>
+                <nav id="nav">
+                    <button id="btn-mobile">
+                        <span id="hamburguer"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="#">Model S</a></li>
+                        <li><a href="#">Model 3</a></li>
+                        <li><a href="#">Model X</a></li>
+                        <li><a href="#">Model Y</a><li>
+                        <li><a href="#">Solar Roof</a><li>  
+                        <li><a href="#">Shop</a><li> 
+                        <li><a href="#">Account</a><li>                  
+                    </ul>
+                </nav>
+        </header><!--header-end-->
+                <div class="title">
+                    <h2>Model S</h2>
+                    <p>Order Online For <a href="#">Touchless Delivery</a></p>
+                </div><!--title-end-->
+
+                <div class="button">
+                    <a href="#">CUSTOM ORDER</a>
+                    <a href="#" style=" background-color: white; color: black;">EXIST INVENTORY</a>
+                </div>
+        </section><!--section-end-->
+
+
+    <!--start-js-->
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(event){
+            if(event.type === 'touchstart') event.preventdefaut()
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+    
+</body>
+</html>
